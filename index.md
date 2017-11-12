@@ -1,37 +1,266 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amarnath Rana</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
 
-You can use the [editor on GitHub](https://github.com/amar74/amar.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<body>
+<!-- header section -->
+<section class="banner" role="banner">
+  <header id="header"> 
+    <!-- navigation section  -->
+    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/log.png" alt="Amarnath Rana"></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		  <li><a href="home.html"> Home </a> </li>
+          <li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    <!-- navigation section  --> 
+  </header>
+  
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="banner-text text-center">
+        <h1><Strong> AMARNATH RANA</h1>
+        <p> <b> <i>Amarnath Rana,</i></b> is a young entrepreneur, also a motivator </br>
+		  Amarnath Rana belongs from pathaldiha, Koderma (Jharkhand), he compeleted Scholing from Hazaribag(Science City) and now he doing engineeering in Computer Engineering </br>
+          		  </p>
+		<section id="descripton" class="section descripton">
+  <div class="container">
+  </div>
+</section>
+<!-- description text section --> 
+<!-- portfolio section -->
+<section id="works" class="works section no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar1.jpg" class="work-box"> <img src="images/amarnath.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+		   <h5>Er. Aamrnath Rana</h5>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar3.jpg" class="work-box"> <img src="images/amarnath1.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana</h5>
+            <p>Software Developer</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar4.jpg" class="work-box"> <img src="images/amarnath2.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana</h5>
+            <p>Graphic Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar5.jpg" class="work-box"> <img src="images/amarnath3.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana</h5>
+            <p>Website Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar6.jpg" class="work-box"> <img src="images/amarnath4.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana/h5>
+            <p>Logo Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar7.jpg" class="work-box"> <img src="images/amarnath5.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Aamrnath Rana</h5>
+            <p>Branding</p>
+          </div>
+        </div>
+		<!-- overlay -->
+		</a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar11.jpg" class="work-box"> <img src="images/amarnath7.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Aamrnath Rana</h5>
+            <p>Lectural</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/amar8.jpg" class="work-box"> <img src="images/amarnath6.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana</h5>
+            <p>Motivator</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+    </div>
+  </div>
+</section>
+		
+        <!-- banner text --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header section --> 
+<!-- description text section -->
+<section id="descripton" class="section descripton">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 text-center">
+      <p> I worked all these field. </p>
+    </div>
+  </div>
+</section>
+<!-- description text section --> 
+<!-- portfolio section -->
+<section id="works" class="works section no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a9.jpg" class="work-box"> <img src="images/a1.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Code Analysis</h5>
+            <p>Binigya D</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a11.jpg" class="work-box"> <img src="images/a11.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Spacescience.gq</h5>
+            <p>Website Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a4.jpg" class="work-box"> <img src="images/a4.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Software Development</h5>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a5.jpg" class="work-box"> <img src="images/a5.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5> The Lost Man</h5>
+            <p>Game Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a6.jpeg" class="work-box"> <img src="images/a6.jpeg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Cosmologylovers</h5>
+            <p>Website Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a7.jpg" class="work-box"> <img src="images/a7.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5> Microsoft Azure</h5>
+            <p>A.I</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a8.jpg" class="work-box"> <img src="images/a8.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Animation</h5>
+            <p>Graphics Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/a10.jpg" class="work-box"> <img src="images/a10.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Er. Amarnath Rana</h5>
+            <p>Website Design</p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio section --> 
+<!-- hire me section -->
+<section id="hireme" class="section hireme">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3>Need something specific?</h3>
+      <p>We are currently crafting new products but would love to hear from you.</p>
+      <a href="contact.html" class="btn btn-large">Hire me</a> </div>
+  </div>
+</section>
+<!-- hire me section --> 
+<!-- footer -->
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="col-md-12">
+        <p>
+        <ul class="footer-share">
+          <li><a href="https://www.facebook.com/amarnath77492"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/Amarnathhawkin2"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://in.linkedin.com/in/amarnath-rana-639736117"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://plus.google.com/104329251458258968638"><i class="fa fa-google-plus"></i></a></li>
+          
+        </ul>
+        </p>
+        <p>© 2017 All rights reserved. All Rights Reserved<br>
+          Made <i class="fa fa-heart pulse"></i> by <a href="https://in.linkedin.com/in/amarnath-rana-639736117">Amarnath Rana</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer --> 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amar74/amar.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
