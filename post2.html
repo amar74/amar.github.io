@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amarnath Rana</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="innerbanner" role="banner">
+  <header id="header"> 
+    <!-- navigation section  -->
+    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Amarnath Rana"></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+         <li><a href="index.html"> Home </a> </li>
+          <li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    <!-- navigation section  --> 
+  </header>
+  
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="innerbanner-text text-center">
+        <p>Amarnath Rana</p>
+        <!-- banner text --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header section --> 
+<!-- description text section -->
+<section id="inner-description" class="section inner-description">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 text-center"> <img src="images/designer-pic.jpg" alt="Mafolio">
+      <h1> Blogs</h1>
+	    
+    </div>
+    <div><img src="images/future.png" alt="FT"> 
+     <h1> How I started with learning AI in the last 2 months </h1> <p> 20 nov 2017 </p> </br>
+     <h3> Beginning with the most important skill of the 21st century </h3></br>
+
+	 
+	 <p>Everyone is very busy these days. There is just so much going on with our personal and professional lives. On top of it, lo and behold, something like artificial intelligence starts to gather steam and you learn that your skillset is getting terribly outdated over next two years. </p>
+	 <p>It was time to take action. And I did what I thought was the only course of action to take now — to update my skills as a developer, my mindset as a product guy and my philosophy as an entrepreneur to become data oriented. </p> </br>
+	 <p> <strong> Building my first neural network </strong> </p>
+	 <div><img src="images/1_k2lJrG5tkSzGSyNgLRIaKA.jpeg" alt="FT"> </br>
+	<p>I did not jump straight to neural nets because it is some better way to learn. I was trying to familiarize myself with all the words in the domain so I can learn to speak the language. </br></p>
+          <p>   Coming from a pure Javascript and Nodejs background, I didn’t want to switch stacks just yet. So I searched for a simple neural net module called NN (Neural Network) and used it to implement an AND gate with a dummy input. I chose the problem that for any three inputs X,Y and Z the output should by X AND Y. </p>
+              <p> <strong> Example </strong> </br>
+	var nn = require('nn') </br>
+var opts = { </br>
+    layers: [ 4 ], </br>
+    iterations: 300000, </br>
+    errorThresh: 0.0000005, </br>
+    activation: 'logistic', </br>
+    learningRate: 0.4, </br>
+    momentum: 0.5, </br>
+    log: 100    </br>
+} </br>
+var net = nn(opts) </br>
+net.train([ </br>
+    { input: [ 0,0,1 ], output: [ 0 ] }, </br>
+    { input: [ 0,1,1 ], output: [ 0 ] },   </br>         
+    { input: [ 1,0,1 ], output: [ 0 ] }, </br>
+    { input: [ 0,1,0 ], output: [ 0 ] }, </br>
+    { input: [ 1,0,0 ], output: [ 0 ] }, </br>
+    { input: [ 1,1,1 ], output: [ 1 ] }, </br>
+    { input: [ 0,0,0 ], output: [ 0 ] } </br>
+    ]) </br>
+// send it a new input to see its trained output </br>
+var output = net.send([ 1,1,0])  </br>
+console.log(output); //0.9971279763719718 </br>
+</p>
+<p>In my personal opinion, this was the most confidence building step that I had taken. When the output flashed as 0.9971, I realized that the network learned how to do an AND operation and ignore the additional input on its own.
+This is mostly the gist of machine learning. You give a computer program a set of data and it adjusts its internal parameters in such a way that it gains the ability to answer questions on new data with a decreasing error from what it observed from original data.</br>
+	 <div><img src="images/0_DGVbHESLo_1dMyDH.png" alt="FT" height="175" width="100"> </br> </p>
+	 <h1> Catching the chatbot train </h1>
+	 <p> <div><img src="images/0_zx9RSAy_0vt7Oyxv_.jpg" alt="FT" height="175" width="100"> </br>
+	     It got me to make many friends on Twitter and LinkedIn, with whom I can discuss AI development at length and depth and can even reach out should I get stuck. I got a few offers to do consulting projects and the best part of all, young developers and AI beginners started to ask me how I began with AI.
+Which brings us to why I’ve written this article.
+
+	 <p> By: <strong> Medium News </strong> </br>Amarnath rana </p>
+	 </div>
+  </div>
+</section>
+<!-- description text section --> 
+
+<!-- hire me section -->
+<section id="hireme" class="section hireme">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3>Need something specific?</h3>
+      <p>We are currently crafting new products & blogs but would love to hear from you.</p>
+      <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-large">Hire me</a> </div>
+  </div>
+</section>
+<!-- hire me section --> 
+<!-- footer -->
+
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="col-md-12">
+        <p>
+        <ul class="footer-share">
+           <li><a href="https://www.facebook.com/amarnath77492"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/Amarnathhawkin2"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://in.linkedin.com/in/amarnath-rana-639736117"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://plus.google.com/104329251458258968638"><i class="fa fa-google-plus"></i></a></li>
+          
+        </ul>
+        </p>
+        <p>© 2017 All rights reserved. All Rights Reserved<br>
+          Made <i class="fa fa-heart pulse"></i> by <a href="https://in.linkedin.com/in/amarnath-rana-639736117">Amarnath Rana</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer --> 
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

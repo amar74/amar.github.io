@@ -1,0 +1,211 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amarnath Rana</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="innerbanner" role="banner">
+  <header id="header"> 
+    <!-- navigation section  -->
+    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Amarnath Rana"></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+         <li><a href="index.html"> Home </a> </li>
+          <li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    <!-- navigation section  --> 
+  </header>
+  
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="innerbanner-text text-center">
+        <p>Amarnath Rana</p>
+        <!-- banner text --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header section --> 
+<!-- description text section -->
+<section id="inner-description" class="section inner-description">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 text-center"> <img src="images/designer-pic.jpg" alt="Mafolio">
+      <h1> Blogs</h1>
+	    
+    </div>
+    <div><img src="images/1_d2MAPp7120q_8x6Ue8KYmQ.png" alt="FT"> 
+     <h1> JavaScript ES 2017: Learn Async/Await by Example </h1> <p> 21 nov 2017 </p> </br>
+     <h3> Prerequisites </h3></br>
+
+	 
+	 <p>ES 2017 introduced Asynchronous functions. Async functions are essentially a cleaner way to work with asynchronous code in JavaScript. In order to understand exactly what these are, and how they work, we first need to understand Promises. </p>
+	 <p>If you don’t know what Promises are, you should read this article I published on Promises before proceeding. You will not understand Async/Await in JavaScript until you understand Promises. </p> </br>
+	 <h1> <strong> What is Async/Await? </strong> </h1>
+	          <p> The newest way to write asynchronous code in JavaScript. </br>
+It is non blocking (just like promises and callbacks). </br>
+Async/Await was created to simplify the process of working with and writing chained promises. </br>
+Async functions return a Promise. If the function throws an error, the Promise will be rejected. If the function returns a value, the Promise will be resolved. </br>
+	<strong> Syntax </strong> </br>
+          Writing an async function is quite simple. You just need to add the async keyword prior to function: </br> 
+		  // Normal Function </br>
+function add(x,y){ </br>
+  return x + y;   </br>
+}   </br>
+// Async Function   </br>
+async function add(x,y){ </br>
+  return x + y;  </br>
+} </br>
+</p>
+<h1> Await</h1>
+<p> Async functions can make use of the await expression. This will pause the async function and wait for the Promise to resolve prior to moving on. </p> 
+	</p>
+	 <h1> Example </h1>
+	 <p>  To understand what all of this means, lets look at an example! First we’re going to create some code using promises. Once we’ve got something working, we’ll rewrite our function using async/await so you can see just how much simpler it is! </br>
+ <strong>Consider the below code: </br>
+function doubleAfter2Seconds(x) { </br>
+  return new Promise(resolve => { </br>
+    setTimeout(() => {   </br>
+      resolve(x * 2);    </br>
+    }, 2000);     </br>
+  });     </br>
+}      </br> </strong>
+In this code we have a function called "doubleAfter2Seconds". This function will take a number as input and will resolve two seconds later with the number doubled.
+We can invoke our function and pass in the number 10 to try it out. To do this, we’ll call our function while passing in 10. Then, after the promise has resolved, we’ll take our returned value and log it to the console. Here’s what this would look like: </br>
+	<strong> doubleAfter2Seconds(10).then((r) => { </br>
+  console.log(r);  </br>
+});  </br> </strong>
+<strong> Awesome!  </strong> </br>
+But what if we want to run a few different values through our function and add the result? Unfortunately, we cant just add our invocations together and log them: </br>
+<strong>let sum =   doubleAfter2Seconds(10) </br>
+          + doubleAfter2Seconds(20) </br>
+          + doubleAfter2Seconds(30); </br>
+console.log(sum);  </br>
+// undefined   </br> </strong>
+The problem with the above code is it doesn’t actually wait for our promises to resolve before logging to the console. </br>
+One possible solution is to set up a promise chain. To do this we’ll create a new function called addPromise. Our function will take an input value, and will return a Promise. Here’s what the boilerplate code looks like:</br>
+ <strong>function addPromise(x){ </br>
+  return new Promise(resolve => { </br>
+    // Code goes here...    </br>
+    // resolve()  </br>
+  });  </br>
+} </br> </strong>
+Awesome. Now we can add in our calls to our doubleAfter2Seconds function. Once we’re done, we can resolve with our new sum. In this example we should be returning x + 2*a + 2*b + 2*c. Here’s the code: </br>
+   <strong>function addPromise(x){ </br>
+  return new Promise(resolve => { </br>
+    doubleAfter2Seconds(10).then((a) => { </br>
+      doubleAfter2Seconds(20).then((b) => { </br>
+        doubleAfter2Seconds(30).then((c) => { </br>
+          resolve(x + a + b + c); </br>
+        }) </br>
+      })  </br>
+    }) </br>
+  }); </br>
+} </br>
+</strong></p> 
+</h1> Lets walk through the code again, line by line.</h1>
+<p> First, we create our function addPromise. This function accepts one parameter. </br>
+Next, we create our new Promise that we’ll be returning. Note that for the sake of simplicity, we’re not handling rejections/errors. </br>
+Next we invoke doubleAfter2Seconds for the first time, passing in a value of 10. Two seconds later, the return value of 20 will be returned to the a variable. </br>
+We invoke doubleAfter2Seconds again, this time passing in a value of 20. Two seconds later, the return value of 40 will be returned to the b variable. </br>
+We invoke doubleAfter2Seconds one final time, this time passing in a value of 30. Two seconds later, the return value of 60 will be returned to the c variable. </br>
+Finally, we resolve our Promise with the value of 10 + 20 + 40 + 60 or 130. </p>
+<p> <strong> When we put all of the code together, here’s what it looks like: </strong> </br>
+ <strong>function doubleAfter2Seconds(x) { </br>
+  return new Promise(resolve => { </br>
+    setTimeout(() => {  </br>
+      resolve(x * 2);  </br>
+    }, 2000);  </br>
+  });  </br>
+}  </br>
+
+function addPromise(x){  </br>
+  return new Promise(resolve => {  </br>
+    doubleAfter2Seconds(10).then((a) => {  </br>
+      doubleAfter2Seconds(20).then((b) => {  </br>
+        doubleAfter2Seconds(30).then((c) => {  </br>
+          resolve(x + a + b + c); </br>
+      	}) </br>
+      }) </br>
+    }) </br>
+  }); </br>
+} </br>
+
+addPromise(10).then((sum) => { </br>
+  console.log(sum); </br>
+}); </br> </strong>
+
+</p>
+	 <p> By: <strong> Medium News </strong> </br>Amarnath rana </p>
+	 <h1>  Notes: </h1>
+	 <p>Thanks for reading, and hopefully this was helpful. There is much more to Async/Await — including error handling — that we didn’t cover in this article.
+If you’re still having trouble understanding what Async/Await is, it’s probably because you don’t fully understand how Promises work. Promises are key to understanding this topic. Additional information can be found on Promises here, here, and here.
+If you’re ready to finally learn Web Development, check out The Ultimate  </p>
+	 </div>
+  </div>
+</section>
+<!-- description text section --> 
+
+<!-- hire me section -->
+<section id="hireme" class="section hireme">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3>Need something specific?</h3>
+      <p>We are currently crafting new products & blogs but would love to hear from you.</p>
+      <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-large">Hire me</a> </div>
+  </div>
+</section>
+<!-- hire me section --> 
+<!-- footer -->
+
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="col-md-12">
+        <p>
+        <ul class="footer-share">
+           <li><a href="https://www.facebook.com/amarnath77492"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/Amarnathhawkin2"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://in.linkedin.com/in/amarnath-rana-639736117"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://plus.google.com/104329251458258968638"><i class="fa fa-google-plus"></i></a></li>
+          
+        </ul>
+        </p>
+        <p>© 2017 All rights reserved. All Rights Reserved<br>
+          Made <i class="fa fa-heart pulse"></i> by <a href="https://in.linkedin.com/in/amarnath-rana-639736117">Amarnath Rana</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer --> 
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
