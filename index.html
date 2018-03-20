@@ -32,35 +32,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-
-<!--
-<?php
- 
-    $to = "amar74.soft@gmail.com"; 
-    $from = $_REQUEST['email']; 
-    $name = $_REQUEST['name'];
-    $message = $_REQUEST['message']	
-    $headers = "From: $from"; 
-    $subject = "Amarnath Rana just fetched an online query for you."; 
- 
-    $fields = array(); 
-    $fields{"name"} = "name"; 
-    $fields{"email"} = "email";
-	$fields{"message"} = "message";
-    
-    
-    
- 
-    $body = "Hello Sir, I am Your Jarvis this side (your personal virtual assistant). I have just fetched an online query for you, please contact this person. Here are the customer details:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
- 
-  if (isset($_POST["submit"])) {
-
-    $send = mail($to, $subject, $body, $headers);
-  }
-?>
--->
-
 <body>
 <!-- Navigation
     ==========================================-->
@@ -69,15 +40,15 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <p style=font:black;><a class="navbar-brand" href="index.php">Amarnath Rana</a> </div></p>
+      <a class="navbar-brand" href="index.php">Amarnath Rana</a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="home.php" class="page-scroll">Home</a></li>
-        <li><a href="about.php">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="services.php">Services</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -94,7 +65,7 @@
     <p> Our Company famous for digital design and development of <br>
 	 Dyanamic Websites, E-commerce Websites, Mobile Applications, Android App, PC Software, and many other types of IT services.</p>
     <div class="clearfix"></div>
-    <a href="registration.php" class="btn btn-default btn-lg">Call Back request</a> </div>
+    <a href="registration.html" class="btn btn-default btn-lg">Call Back request</a> </div>
 </header>
 <!-- About Section -->
 <div id="about-section">
@@ -310,13 +281,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" name="email" id="email" class="form-control" placeholder="E-mail....." required="required">
+              <input type="email" id="email" class="form-control" placeholder="E-mail....." required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -338,8 +309,8 @@
         <li><a href="https://www.facebook.com/amarnath77492""><i class="fa fa-facebook"></i></a></li>
         <li><a href="https://twitter.com/Amarnathhawkin2"><i class="fa fa-twitter"></i></a></li>
         <li><a href="https://plus.google.com/104329251458258968638"><i class="fa fa-dribbble"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/amar74"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/eramarnath/?hl=en"><i class="fa fa-instagram"></i></a></li>
         <li><a href="https://in.linkedin.com/in/amarnath-rana-639736117"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
@@ -347,14 +318,13 @@
 </div>
 <div id="footer">
   <div class="container">
-    <p>Copyright &copy; 2018 Amarnath Rana. Designed by <a href="http://www.amarnath.com" rel="nofollow">Amarnath Rana(Webgax-Quassarian Innovations Pvt. Ltd.)</a></p>
+    <p>Copyright &copy; 2018 Amarnath Rana. Designed by <a href="http://www.amarnath.com" rel="nofollow">Amarnath Rana</a></p>
   </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js1/jquery.1.11.1.js"></script>
 <script type="text/javascript" src="js1/bootstrap.js"></script> 
 <script type="text/javascript" src="js1/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js1/jquery.prettyPhoto.js"></script> 
